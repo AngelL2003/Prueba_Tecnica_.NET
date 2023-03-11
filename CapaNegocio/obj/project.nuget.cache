@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bYXOrn/HNwX3fbCXpd+k32SxtTfvRKV9BhJE1lwvM/KFjbsziG0JRmABPjGf2thxhUJ4kC/A8ESLJehrcZf88w==",
+  "dgSpecHash": "IDkr7jOwQjBNrVSPFbvj6K+KRyLl3LRglFfJStlc3bUjC/G4bkyqcMGPk+6SF7lv7hV+IyfE4Sd5bQSqZvXY0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaNegocio\\CapaNegocio.csproj",
+  "projectFilePath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaNegocio\\CapaNegocio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lacar\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\lacar\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

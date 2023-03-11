@@ -99,7 +99,7 @@ namespace CapaPresentacion
             {
                 Id_Personas = dataGridView1.CurrentRow.Cells["Id_Persona"].Value.ToString();
                 ObjetoCN.EliminarPersonas(Id_Personas);
-                MessageBox.Show("Eliminado correctamente");
+                MessageBox.Show("Eliminado satisfactoriamente");
                 MostrarPersonas();
             }
             else

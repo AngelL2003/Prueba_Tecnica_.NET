@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaPresentacion\\CapaPresentacion.csproj": {}
+    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaPresentacion\\CapaPresentacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\CapaDatos.csproj": {
+    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\CapaDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\CapaDatos.csproj",
+        "projectUniqueName": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\CapaDatos.csproj",
         "projectName": "CapaDatos",
-        "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\CapaDatos.csproj",
+        "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\CapaDatos.csproj",
         "packagesPath": "C:\\Users\\lacar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\obj\\",
+        "outputPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaNegocio\\CapaNegocio.csproj": {
+    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaNegocio\\CapaNegocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaNegocio\\CapaNegocio.csproj",
+        "projectUniqueName": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaNegocio\\CapaNegocio.csproj",
         "projectName": "CapaNegocio",
-        "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaNegocio\\CapaNegocio.csproj",
+        "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaNegocio\\CapaNegocio.csproj",
         "packagesPath": "C:\\Users\\lacar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaNegocio\\obj\\",
+        "outputPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaNegocio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,8 +99,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\CapaDatos.csproj": {
-                "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\CapaDatos.csproj"
+              "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\CapaDatos.csproj": {
+                "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\CapaDatos.csproj"
               }
             }
           }
@@ -134,14 +134,14 @@
         }
       }
     },
-    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaPresentacion\\CapaPresentacion.csproj": {
+    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaPresentacion\\CapaPresentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaPresentacion\\CapaPresentacion.csproj",
+        "projectUniqueName": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaPresentacion\\CapaPresentacion.csproj",
         "projectName": "CapaPresentacion",
-        "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaPresentacion\\CapaPresentacion.csproj",
+        "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaPresentacion\\CapaPresentacion.csproj",
         "packagesPath": "C:\\Users\\lacar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaPresentacion\\obj\\",
+        "outputPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaPresentacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -163,8 +163,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaNegocio\\CapaNegocio.csproj": {
-                "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaNegocio\\CapaNegocio.csproj"
+              "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaNegocio\\CapaNegocio.csproj": {
+                "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaNegocio\\CapaNegocio.csproj"
               }
             }
           }

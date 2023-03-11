@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\CapaDatos.csproj": {}
+    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\CapaDatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\CapaDatos.csproj": {
+    "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\CapaDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\CapaDatos.csproj",
+        "projectUniqueName": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\CapaDatos.csproj",
         "projectName": "CapaDatos",
-        "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\CapaDatos.csproj",
+        "projectPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\CapaDatos.csproj",
         "packagesPath": "C:\\Users\\lacar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\obj\\",
+        "outputPath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

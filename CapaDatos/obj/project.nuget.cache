@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8K2tFlQ15lzKznThv1demswpYqswRfaYhSs/icagZ3st0bY2bIh6cCnU4hq0mS/zbJFCU7asyxC2Cx1OUhsOjA==",
+  "dgSpecHash": "0kSBhGyJ4Hwf0Qczhd8P0t6yleV8dhj4yJn7e4q/V0Imf2UyXb8Uv2y51gDEQWP7DXU3hmuMdrJ49sE4xhPitQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web\\CapaDatos\\CapaDatos.csproj",
+  "projectFilePath": "C:\\Users\\lacar\\Escritorio\\Proyecto_Web Windows Forms\\CapaDatos\\CapaDatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lacar\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\lacar\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
