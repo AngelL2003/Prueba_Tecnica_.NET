@@ -50,7 +50,7 @@ namespace CapaPresentacion
             {
                 //insertar 
                 case false:
-                    if (seIngresoTexto == false && comboBoxItems().Count() == -1 || comboBoxItems().Count() == -1 && seIngresoTexto == true || seIngresoTexto == false && comboBoxItems().Count() > 0)
+                    if (seIngresoTexto == false && Cb_Sexo.Text == "" || seIngresoTexto == true && Cb_Sexo.Text == "" || seIngresoTexto == false && Cb_Sexo.Text != "")
                     {
                         Cb_Sexo.Items.Clear();
                         MessageBox.Show("Llenar todos los campos");
