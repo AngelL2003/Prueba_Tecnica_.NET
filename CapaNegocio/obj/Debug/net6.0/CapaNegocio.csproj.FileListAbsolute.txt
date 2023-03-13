@@ -13,3 +13,18 @@ C:\Users\lacar\Escritorio\Proyecto_Web\CapaNegocio\obj\Debug\net6.0\CapaNegocio.
 C:\Users\lacar\Escritorio\Proyecto_Web\CapaNegocio\obj\Debug\net6.0\refint\CapaNegocio.dll
 C:\Users\lacar\Escritorio\Proyecto_Web\CapaNegocio\obj\Debug\net6.0\CapaNegocio.pdb
 C:\Users\lacar\Escritorio\Proyecto_Web\CapaNegocio\obj\Debug\net6.0\ref\CapaNegocio.dll
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\bin\Debug\net6.0\CapaNegocio.deps.json
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\bin\Debug\net6.0\CapaNegocio.dll
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\bin\Debug\net6.0\CapaNegocio.pdb
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\bin\Debug\net6.0\CapaDatos.dll
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\bin\Debug\net6.0\CapaDatos.pdb
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\obj\Debug\net6.0\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\obj\Debug\net6.0\CapaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\obj\Debug\net6.0\CapaNegocio.AssemblyInfoInputs.cache
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\obj\Debug\net6.0\CapaNegocio.AssemblyInfo.cs
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\obj\Debug\net6.0\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\obj\Debug\net6.0\CapaNegocio.csproj.CopyComplete
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\obj\Debug\net6.0\CapaNegocio.dll
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\obj\Debug\net6.0\refint\CapaNegocio.dll
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\obj\Debug\net6.0\CapaNegocio.pdb
+C:\Users\lacar\Escritorio\Proyecto_Web Windows Forms\CapaNegocio\obj\Debug\net6.0\ref\CapaNegocio.dll

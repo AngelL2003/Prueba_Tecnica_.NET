@@ -1,4 +1,10 @@
 using CapaNegocio;
+using static System.Windows.Forms.LinkLabel;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Drawing;
+using System;
+using TextBox = System.Windows.Forms.TextBox;
+using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
@@ -14,7 +20,19 @@ namespace CapaPresentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MostrarPersonas(); 
+            Cb_Sexo.DropDownStyle = ComboBoxStyle.DropDownList;
+            MostrarPersonas();
+            comboBoxItems();
+        }
+        private List<string> comboBoxItems()
+        {
+            List<string> comboBoxItems = new List<string>() {"Hombre", "Mujer"};// Declarar una lista para almacenar los elementos del ComboBox
+            
+            foreach (var item in comboBoxItems)
+            {
+                Cb_Sexo.Items.Add(item);
+            }
+            return comboBoxItems;
         }
 
         private void MostrarPersonas()
@@ -22,56 +40,81 @@ namespace CapaPresentacion
             CN_Persona Objeto = new CN_Persona();
             dataGridView1.DataSource = Objeto.MostrarPersona();
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
-            //INSERTAR
-            if (Editar == false)
+            bool seIngresoTexto = !string.IsNullOrEmpty(Txt_Nombre.Text) && !string.IsNullOrEmpty(Txt_Apellido.Text); //Valida que los texbox no esten vacio
+
+
+            //Valida que los campos esten vacios
+            switch(Editar)
             {
-                try
-                {
-                    ObjetoCN.InsertarPersona(Txt_Nombre.Text, Txt_Apellido.Text, Dtp_Fecha_nac.Text, Cb_Sexo.SelectedItem.ToString());
-                    MessageBox.Show("se inserto correctamente");
-                    MostrarPersonas();
-                    limpiarForm();
-                    tabControl1.SelectedTab = tabPage2;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("no se pudo insertar los datos por: " + ex);
-                }
-            }
-            //EDITAR
-            if (Editar == true)
-            {
-                try
-                {
+                //insertar 
+                case false:
+                    if (seIngresoTexto == false && comboBoxItems().Count() == -1 || comboBoxItems().Count() == -1 && seIngresoTexto == true || seIngresoTexto == false && comboBoxItems().Count() > 0)
+                    {
+                        Cb_Sexo.Items.Clear();
+                        MessageBox.Show("Llenar todos los campos");
+                        comboBoxItems();
+                    }
+                    else
+                    {
+                        try
+                        {
+                            ObjetoCN.InsertarPersona(Txt_Nombre.Text, Txt_Apellido.Text, Dtp_Fecha_nac.Text, Cb_Sexo.Text);
+                            MessageBox.Show("se inserto correctamente");
+                            MostrarPersonas();
+                            limpiarForm();
+                            tabControl1.SelectedTab = tabPage2;
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("no se pudo insertar los datos por: " + ex);
+                        }
+                    }
                     
-                    ObjetoCN.EditarRegistro(Id_Personas,Txt_Nombre.Text, Txt_Apellido.Text, Dtp_Fecha_nac.Text, Cb_Sexo.SelectedItem.ToString());
-                    MessageBox.Show("se edito correctamente");
-                    MostrarPersonas();
-                    limpiarForm();
-                    Editar = false;
-                    tabControl1.SelectedTab = tabPage2;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("no se pudo editar los datos por: " + ex);
-                }
+                    break;
+
+                    //editar
+                case true:
+                    if (seIngresoTexto == false && Cb_Sexo.Text == "" || seIngresoTexto == true && Cb_Sexo.Text == "" || seIngresoTexto == false && Cb_Sexo.Text != "")
+                    {
+                        Cb_Sexo.Items.Clear();
+                        comboBoxItems();
+                        MessageBox.Show("Llenar todos los campos");
+                    }
+                    else
+                    {
+                        try
+                        {
+                            
+                            comboBoxItems();
+                            ObjetoCN.EditarRegistro(Id_Personas, Txt_Nombre.Text, Txt_Apellido.Text, Dtp_Fecha_nac.Text, Cb_Sexo.Text);
+                            MessageBox.Show("se edito correctamente");
+                            MostrarPersonas();
+                            limpiarForm();
+                            comboBoxItems();
+                            tabControl1.SelectedTab = tabPage2;
+                            Editar = false;
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("no se pudo editar los datos por: " + ex);
+                        }
+                    }
+                    
+                    break;
+                    MessageBox.Show("Llenar todos los campos");
             }
             
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+
+
             if (dataGridView1.SelectedRows.Count > 0)
             {
+                Cb_Sexo.Items.Clear();
                 tabControl1.SelectedTab = tabPage1;
                 Editar= true;
                 Id_Personas = dataGridView1.CurrentRow.Cells["Id_Persona"].Value.ToString();
@@ -79,7 +122,8 @@ namespace CapaPresentacion
                 Txt_Apellido.Text = dataGridView1.CurrentRow.Cells["Apellidos"].Value.ToString();
                 Dtp_Fecha_nac.Text = dataGridView1.CurrentRow.Cells["Fecha_Nacimiento"].Value.ToString();
                 Cb_Sexo.Text = dataGridView1.CurrentRow.Cells["Sexo"].Value.ToString();
-              
+                comboBoxItems();
+                
             }
             else
                 MessageBox.Show("seleccione una fila por favor");
@@ -88,9 +132,8 @@ namespace CapaPresentacion
         {
             Txt_Nombre.Text = "";
             Txt_Apellido.Text = "";
-            Dtp_Fecha_nac.Text = "";
-            Cb_Sexo.Text = "";
-
+            Dtp_Fecha_nac.Text = null;
+            Cb_Sexo.Items.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -104,6 +147,11 @@ namespace CapaPresentacion
             }
             else
                 MessageBox.Show("seleccione una fila por favor");
+        }
+
+        private void Cb_Sexo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

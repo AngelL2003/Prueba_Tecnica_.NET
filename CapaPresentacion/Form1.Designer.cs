@@ -32,8 +32,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.Dtp_Fecha_nac = new System.Windows.Forms.DateTimePicker();
             this.Cb_Sexo = new System.Windows.Forms.ComboBox();
+            this.Dtp_Fecha_nac = new System.Windows.Forms.DateTimePicker();
             this.Btn_Guardar = new System.Windows.Forms.Button();
             this.Txt_Apellido = new System.Windows.Forms.TextBox();
             this.Txt_Nombre = new System.Windows.Forms.TextBox();
@@ -51,9 +51,12 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(127, 6);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(507, 163);
             this.dataGridView1.TabIndex = 0;
@@ -81,8 +84,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.Dtp_Fecha_nac);
             this.tabPage1.Controls.Add(this.Cb_Sexo);
+            this.tabPage1.Controls.Add(this.Dtp_Fecha_nac);
             this.tabPage1.Controls.Add(this.Btn_Guardar);
             this.tabPage1.Controls.Add(this.Txt_Apellido);
             this.tabPage1.Controls.Add(this.Txt_Nombre);
@@ -98,6 +101,15 @@
             this.tabPage1.Text = "Usuario";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // Cb_Sexo
+            // 
+            this.Cb_Sexo.FormattingEnabled = true;
+            this.Cb_Sexo.Location = new System.Drawing.Point(271, 226);
+            this.Cb_Sexo.Name = "Cb_Sexo";
+            this.Cb_Sexo.Size = new System.Drawing.Size(200, 23);
+            this.Cb_Sexo.TabIndex = 12;
+            this.Cb_Sexo.SelectedIndexChanged += new System.EventHandler(this.Cb_Sexo_SelectedIndexChanged);
+            // 
             // Dtp_Fecha_nac
             // 
             this.Dtp_Fecha_nac.CustomFormat = "";
@@ -107,19 +119,7 @@
             this.Dtp_Fecha_nac.Size = new System.Drawing.Size(200, 23);
             this.Dtp_Fecha_nac.TabIndex = 11;
             this.Dtp_Fecha_nac.UseWaitCursor = true;
-            this.Dtp_Fecha_nac.Value = new System.DateTime(2023, 3, 10, 21, 55, 44, 0);
-            // 
-            // Cb_Sexo
-            // 
-            this.Cb_Sexo.FormattingEnabled = true;
-            this.Cb_Sexo.Items.AddRange(new object[] {
-            "Hombre ",
-            "Mujer"});
-            this.Cb_Sexo.Location = new System.Drawing.Point(271, 224);
-            this.Cb_Sexo.Name = "Cb_Sexo";
-            this.Cb_Sexo.Size = new System.Drawing.Size(200, 23);
-            this.Cb_Sexo.TabIndex = 10;
-            this.Cb_Sexo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.Dtp_Fecha_nac.Value = new System.DateTime(2023, 3, 12, 0, 0, 0, 0);
             // 
             // Btn_Guardar
             // 
@@ -236,8 +236,9 @@
         private TextBox Txt_Apellido;
         private TextBox Txt_Nombre;
         private Label label4;
-        private ComboBox Cb_Sexo;
+
         private DateTimePicker Dtp_Fecha_nac;
         private Button button1;
+        private ComboBox Cb_Sexo;
     }
 }
